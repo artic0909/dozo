@@ -3573,7 +3573,7 @@ hr {
   padding-bottom: 168px;
 }
 .footer-area {
-  background: #070b11;
+  background: #0c0c0c;
   position: relative;
   overflow: hidden;
 }
@@ -3605,6 +3605,11 @@ hr {
 }
 .footer-area .footer-logo {
   margin-bottom: 30px;
+  background-color: #ff5f13;
+  padding: 3px;
+  img {
+    filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.76));
+  }
 }
 .footer-area .footer-pera .info1 {
   margin-bottom: 10px;
