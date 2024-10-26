@@ -2803,9 +2803,9 @@ hr {
 .support-company-area .support-wrapper .right-content .support-img-cap {
   position: absolute;
   bottom: 0px;
-  background: #1f2b7b;
+  background: #ff5f13;
   padding: 59px 28px;
-  border-radius: 5px;
+  border-radius: 0 15px 15px 0;
 }
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
   .support-company-area .support-wrapper .right-content .support-img-cap {
