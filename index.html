@@ -21,6 +21,17 @@
   <link rel="stylesheet" href="assets/css/slick.css" />
   <link rel="stylesheet" href="assets/css/nice-select.css" />
   <link rel="stylesheet" href="assets/css/style.css" />
+  <style>
+    .h-btnn {
+      display: none !important;
+    }
+
+    @media (max-width:991px) {
+      .h-btnn {
+        display: block !important;
+      }
+    }
+  </style>
 </head>
 
 <body>
@@ -120,6 +131,8 @@
                       <li><a href="service.html">Service</a></li>
                       <li><a href="blog.html">Blog</a></li>
                       <li><a href="amc.html">AMC</a></li>
+                      <li><a href="#" class="h-btnn" data-bs-toggle="modal" data-bs-target="#myInquiryModal">Inquiry
+                          Now</a></li>
 
                       <!-- <li><a href="#">Pages</a>
                                                 <ul class="submenu">
@@ -627,7 +640,8 @@
                   Quae aspernatur officia dolor voluptates! Lorem ipsum dolor
                   sit amet.
                 </p>
-                <a href="#" class="white-btn">get in touch</a>
+                <a href="#" class="white-btn" data-bs-toggle="modal" data-bs-target="#myInquiryModal">get in touch</a> &nbsp;
+                <a href="#" class="white-btn" data-bs-toggle="modal" data-bs-target="#myBlogCreateModal">leave your own blog</a>
               </div>
             </div>
           </div>
@@ -901,9 +915,9 @@
                   <li>| &nbsp; &nbsp; Sliding Window</li>
                 </ul>
                 <h2>
-                  <a href="single-blog.html">Lorem ipsum dolor sit amet. Lorem, ipsum.</a>
+                  <a href="blog-details.html">Lorem ipsum dolor sit amet. Lorem, ipsum.</a>
                 </h2>
-                <a href="single-blog.html" class="d-btn">Read more »</a>
+                <a href="blog-details.html" class="d-btn">Read more »</a>
               </div>
             </div>
           </div>
@@ -922,9 +936,9 @@
                   <li>| &nbsp; &nbsp; UPVC window</li>
                 </ul>
                 <h2>
-                  <a href="single-blog.html">Lorem ipsum dolor sit amet consectetur adipisicing.</a>
+                  <a href="blog-details.html">Lorem ipsum dolor sit amet consectetur adipisicing.</a>
                 </h2>
-                <a href="single-blog.html" class="d-btn">Read more » </a>
+                <a href="blog-details.html" class="d-btn">Read more » </a>
               </div>
             </div>
           </div>
@@ -1101,7 +1115,7 @@
               <label class="form-check-label" for="inquiry">Inqury</label>
               <textarea name="inquiry" id="inquiry" name="inquiry" class="form-control"></textarea>
             </div>
-            <button type="submit" class="btn w-100">Get Titcket</button>
+            <button type="submit" class="btn w-100">Get Ticket</button>
 
 
 
@@ -1145,6 +1159,80 @@
     </div>
   </div>
   <!-- Inquiry Modal End -->
+
+
+
+
+
+
+  <!-- Blog Create Modal Start -->
+  <div class="modal fade" id="myBlogCreateModal" tabindex="-1" aria-labelledby="myBlogCreateModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 class="modal-title" id="myBlogCreateModalLabel" style="font-weight: 700;">Leave Your Own Blog
+          </h3>
+        </div>
+        <div class="modal-body">
+
+          <form id="blogForm">
+
+            <div class="mb-3" style="display: flex; flex-direction: column; align-items: center;">
+              <label for="b_img" class="form-label">
+                <img src="assets/img/blog/add-image.png" style="width: 80px; cursor: pointer;" alt="">
+                <span id="requiredMark" style="color: red; font-size: 2rem;">*</span>
+                <span id="checkMark" style="color: rgb(28, 121, 5); font-size: 2rem; display: none;">✔</span>
+              </label>
+              <input type="file" name="b_img" class="form-control" id="b_img" style="display: none;"
+                onchange="toggleMarks()">
+              <small id="b_img_error" class="txt-org" style="display: none;">Please upload an image
+                under 1.5MB.</small>
+            </div>
+
+            <div class="mb-3">
+              <label for="b_title" class="form-label">Post Title<span style="color: red;">*</span></label>
+              <input type="text" class="form-control" name="b_title" id="b_title">
+              <small id="b_title_error" class="txt-org" style="display: none;">Post title is
+                required.</small>
+            </div>
+
+            <div class="mb-3">
+              <label class="form-check-label" for="b_qt">Quotes<span style="color: red;">*</span></label>
+              <textarea name="b_qt" id="b_qt" class="form-control"></textarea>
+              <small id="b_qt_error" class="txt-org" style="display: none;">Quotes field is
+                required.</small>
+            </div>
+
+            <div class="mb-3">
+              <label class="form-check-label" for="b_desc">Post Description<span style="color: red;">*</span></label>
+              <textarea name="b_desc" id="b_desc" class="form-control"></textarea>
+              <small id="b_desc_error" class="txt-org" style="display: none;">Post description is
+                required.</small>
+            </div>
+
+            <div class="mb-3">
+              <label class="form-check-label" for="b_tag">Post Tags<span style="color: red;">*</span></label>
+              <textarea name="b_tag" id="b_tag" class="form-control"></textarea>
+              <small id="b_tag_error" class="txt-org" style="display: none;">Post tags are
+                required.</small>
+            </div>
+
+            <button type="submit" class="btn w-100">Submit Post</button>
+
+          </form>
+
+        </div>
+
+
+
+
+
+
+      </div>
+    </div>
+  </div>
+  <!-- Blog Create Modal End -->
 
 
 
@@ -1216,6 +1304,15 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
     integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
     crossorigin="anonymous"></script>
+
+
+
+  <!-- blog-validation -->
+  <script src="assets/js/blog-create.js"></script>
+
+
+
+
 </body>
 
 </html>

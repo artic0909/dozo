@@ -23,6 +23,17 @@
     <link rel="stylesheet" href="assets/css/nice-select.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
+    <style>
+        .h-btnn {
+            display: none !important;
+        }
+
+        @media (max-width:991px) {
+            .h-btnn {
+                display: block !important;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -131,11 +142,13 @@
                                             <li><a href="service.html">Service</a></li>
                                             <li><a href="blog.html">Blog</a></li>
                                             <li><a href="amc.html">AMC</a></li>
+                                            <li><a href="#" class="h-btnn" data-bs-toggle="modal"
+                                                    data-bs-target="#myInquiryModal">Inquiry Now</a></li>
 
                                             <!-- <li><a href="#">Pages</a>
                                                     <ul class="submenu">
                                                         <li><a href="elements.html">Element</a></li>
-                                                        <li><a href="project_details.html">Projects Details</a></li>
+                                                        <li><a href="product-details.html">Projects Details</a></li>
                                                         <li><a href="service-details.html">Services Details</a></li>
                                                     </ul>
                                                 </li> -->
@@ -386,9 +399,45 @@
                             <label class="form-check-label" for="inquiry">Inqury</label>
                             <textarea name="inquiry" id="inquiry" name="inquiry" class="form-control"></textarea>
                         </div>
-                        <button type="submit" class="btn w-100">Get Titcket</button>
+                        <button type="submit" class="btn w-100">Get Ticket</button>
+
+
+
+
+
+
+
+                        <!-- find links -->
+                        <div class="modal-footer1 mt-3">
+                            <div class="modal-footer-inner"
+                                style="display:flex; justify-content: space-evenly; align-items: center; gap: 3px;">
+
+                                <a href="" class="find-icons">
+                                    <img src="assets/img/icon/location.png" width="60" alt="">
+                                </a>
+
+                                <a href="" class="find-icons">
+                                    <img src="assets/img/icon/whatsapp.png" width="60" alt="">
+                                </a>
+
+                                <a href="" class="find-icons">
+                                    <img src="assets/img/icon/call.png" width="60" alt="">
+                                </a>
+
+                            </div>
+                        </div>
+
+
+
+
+
                     </form>
                 </div>
+
+
+
+
+
 
             </div>
         </div>

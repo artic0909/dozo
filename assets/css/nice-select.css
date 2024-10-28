@@ -1,23 +1,15 @@
 
 .nice-select {
   -webkit-tap-highlight-color: transparent;
-  color: #9d9d9d;
+  color: #1f1f1f;
   background-color: #fff;
-  border-radius: 5px;
-	border: solid 1px #dca73a;
   box-sizing: border-box;
-  clear: both;
   cursor: pointer;
   display: block;
-  float: left;
   font-family: inherit;
-  font-size: 16px;
-  font-weight: normal;
-  height: 52px;
-  line-height: 47px;
   outline: none;
-  padding-left: 21px;
-  padding-right: 54px;
+  width: 100%;
+  
   position: relative;
   text-align: left !important;
   -webkit-transition: all 0.2s ease-in-out;

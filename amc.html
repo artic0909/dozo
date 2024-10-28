@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>About Page</title>
+    <title>AMC Page</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="manifest" href="site.webmanifest">
@@ -23,6 +23,7 @@
     <link rel="stylesheet" href="assets/css/nice-select.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="assets/css/amc.css">
     <style>
         .h-btnn {
             display: none !important;
@@ -180,34 +181,34 @@
 
 
 
-    <main>
 
 
 
 
 
-        <!-- slider Area Start-->
-        <div class="slider-area ">
-            <div class="single-slider hero-overly slider-height2 d-flex align-items-center"
-                data-background="assets/img/hero/about.jpg">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-xl-12">
-                            <div class="hero-cap pt-100">
-                                <h2>About us</h2>
-                                <nav aria-label="breadcrumb ">
-                                    <ol class="breadcrumb">
-                                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                                        <li class="breadcrumb-item"><a href="#">About</a></li>
-                                    </ol>
-                                </nav>
-                            </div>
+
+    <!-- slider Area Start-->
+    <div class="slider-area ">
+        <div class="single-slider hero-overly slider-height2 d-flex align-items-center"
+            data-background="assets/img/hero/about.jpg">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-12">
+                        <div class="hero-cap pt-100">
+                            <h2>Annual Maintenance Contract</h2>
+                            <nav aria-label="breadcrumb ">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                                    <li class="breadcrumb-item"><a href="#">AMC</a></li>
+                                </ol>
+                            </nav>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- slider Area End-->
+    </div>
+    <!-- slider Area End-->
 
 
 
@@ -219,55 +220,24 @@
 
 
 
+    <!-- AMC Section Start -->
+    <section class="blog_area section-padding">
+        <div class="container">
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-        <!-- About Area Start -->
-        <section class="support-company-area fix pt-10 section-padding30">
-            <div class="support-wrapper align-items-end">
-                <div class="left-content">
-                    <!-- section tittle -->
-                    <div class="section-tittle section-tittle2 mb-55">
+            <div class="row">
+                <div class="col-xl-12">
+                    <!-- Section Tittle -->
+                    <div class="section-tittle section-tittle7 mb-50">
                         <div class="front-text">
-                            <h2 class="">Who we are</h2>
+                            <h2 class="">AMC</h2>
                         </div>
-                        <span class="back-text">About us</span>
-                    </div>
-                    <div class="support-caption">
-                        <p class="pera-top">Mollit anim laborum duis au dolor in voluptcate velit ess cillum dolore eu
-                            lore dsu quality mollit anim laborumuis au dolor in voluptate velit cillu.</p>
-                        <p>Mollit anim laborum.Dvcuis aute iruxvfg dhjkolohr in re voluptate velit esscillumlore eu
-                            quife nrulla parihatur. Excghcepteur sfwsignjnt occa cupidatat non aute iruxvfg
-                            dhjinulpadeserunt mollitemnth incididbnt ut;o5tu layjobore mofllit anim.</p>
-                        <a href="service.html" class="btn red-btn2">read more</a>
-                    </div>
-                </div>
-                <div class="right-content">
-                    <!-- img -->
-                    <div class="right-img">
-                        <img src="assets/img/gallery/ggg.jpg" alt="">
-                    </div>
-                    <div class="support-img-cap text-center">
-                        <span>2011</span>
-                        <p>Since</p>
+                        <span class="back-text">Annual</span>
                     </div>
                 </div>
             </div>
-        </section>
-        <!-- About Area End -->
 
 
 
@@ -275,103 +245,86 @@
 
 
 
+            <!-- Annual Maintenance Contract Content -->
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="amc-form">
 
 
 
 
+                        <form action="" id="amcForm">
+                            <div class="form-inner" id="windowGroup_1">
+                                <div class="form-group">
+                                    <p class="amc-label">Window</p>
+                                    <p class="amc-label amc-label1" id="windowLabel_1">Window 1</p>
+                                </div>
 
+                                <div class="form-group">
+                                    <label class="amc-label" for="w_length_1">Length<span
+                                            class="text-danger">*</span></label>
+                                    <input type="text" class="form-control bdrn" id="w_length_1" name="w_length[]"
+                                        placeholder="Window Length" required>
+                                </div>
 
+                                <div class="form-group">
+                                    <label class="amc-label" for="w_breadth_1">Breadth<span
+                                            class="text-danger">*</span></label>
+                                    <input type="text" class="form-control bdrn" id="w_breadth_1" name="w_breadth[]"
+                                        placeholder="Window Breadth" required>
+                                </div>
 
+                                <div class="form-group">
+                                    <label class="amc-label" for="w_type_1">Window Type<span
+                                            class="text-danger">*</span></label>
+                                    <br>
+                                    <select name="w_type[]" id="w_type_1" class="form-control bdrn"
+                                        style="appearance: none; -webkit-appearance: none;" required>
+                                        <option value="" selected>Select Type</option>
+                                        <option value="Type 1">Type 1</option>
+                                        <option value="Type 2">Type 2</option>
+                                        <option value="Type 3">Type 3</option>
+                                        <option value="Type 4">Type 4</option>
+                                        <option value="Type 5">Type 5</option>
+                                    </select>
+                                </div>
 
-
-
-
-
-        <!-- Testimonial Start -->
-        <div class="testimonial-area t-bg testimonial-padding">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xl-12">
-                        <!-- Section Tittle -->
-                        <div class="section-tittle section-tittle6 mb-50">
-                            <div class="front-text">
-                                <h2 class="">Testimonial</h2>
-                            </div>
-                            <span class="back-text">Feedback</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-xl-10 col-lg-11 col-md-10 offset-xl-1">
-                        <div class="h1-testimonial-active">
-                            <!-- Single Testimonial -->
-                            <div class="single-testimonial">
-                                <!-- Testimonial Content -->
-                                <div class="testimonial-caption">
-                                    <div class="testimonial-top-cap">
-                                        <!-- SVG icon -->
-                                        <svg xmlns="http://www.w3.org/2000/svg"
-                                            xmlns:xlink="http://www.w3.org/1999/xlink" width="86px" height="63px">
-                                            <path fill-rule="evenodd" stroke-width="1px" stroke="rgb(255, 95, 19)"
-                                                fill-opacity="0" fill="rgb(0, 0, 0)"
-                                                d="M82.623,59.861 L48.661,59.861 L48.661,25.988 L59.982,3.406 L76.963,3.406 L65.642,25.988 L82.623,25.988 L82.623,59.861 ZM3.377,25.988 L14.698,3.406 L31.679,3.406 L20.358,25.988 L37.340,25.988 L37.340,59.861 L3.377,59.861 L3.377,25.988 Z" />
-                                        </svg>
-                                        <p>
-                                            Mollit anim laborum.Dvcuis aute iruxvfg dhjkolohr in re
-                                            voluptate velit esscillumlore eu quife nrulla parihatur.
-                                            Excghcepteur sfwsignjnt occa cupidatat non aute iruxvfg
-                                            dhjinulpadeserunt mollitemnth incididbnt ut;o5tu
-                                            layjobore mofllit anim. Mollit anim laborum.Dvcuis aute
-                                            iruxvfg dhjkolohr in re voluptate velit esscillumlore eu
-                                            quife nrulla parihatur. Excghcepteur sfwsignjn.
-                                        </p>
-                                    </div>
-                                    <!-- founder -->
-                                    <div class="testimonial-founder d-flex align-items-center">
-                                        <div class="founder-text">
-                                            <span>Jessya Inn</span>
-                                            <p>Co Founder</p>
-                                        </div>
-                                    </div>
+                                <div class="form-group">
+                                    <label class="amc-label" for="w_unit_1">Unit<span
+                                            class="text-danger">*</span></label>
+                                    <input type="number" class="form-control bdrn" id="w_unit_1" name="w_unit[]" placeholder="0"
+                                        required>
                                 </div>
                             </div>
-                            <!-- Single Testimonial -->
-                            <div class="single-testimonial">
-                                <!-- Testimonial Content -->
-                                <div class="testimonial-caption">
-                                    <div class="testimonial-top-cap">
-                                        <!-- SVG icon -->
-                                        <svg xmlns="http://www.w3.org/2000/svg"
-                                            xmlns:xlink="http://www.w3.org/1999/xlink" width="86px" height="63px">
-                                            <path fill-rule="evenodd" stroke-width="1px" stroke="rgb(255, 95, 19)"
-                                                fill-opacity="0" fill="rgb(0, 0, 0)"
-                                                d="M82.623,59.861 L48.661,59.861 L48.661,25.988 L59.982,3.406 L76.963,3.406 L65.642,25.988 L82.623,25.988 L82.623,59.861 ZM3.377,25.988 L14.698,3.406 L31.679,3.406 L20.358,25.988 L37.340,25.988 L37.340,59.861 L3.377,59.861 L3.377,25.988 Z" />
-                                        </svg>
-                                        <p>
-                                            Mollit anim laborum.Dvcuis aute iruxvfg dhjkolohr in re
-                                            voluptate velit esscillumlore eu quife nrulla parihatur.
-                                            Excghcepteur sfwsignjnt occa cupidatat non aute iruxvfg
-                                            dhjinulpadeserunt mollitemnth incididbnt ut;o5tu
-                                            layjobore mofllit anim. Mollit anim laborum.Dvcuis aute
-                                            iruxvfg dhjkolohr in re voluptate velit esscillumlore eu
-                                            quife nrulla parihatur. Excghcepteur sfwsignjn.
-                                        </p>
-                                    </div>
-                                    <!-- founder -->
-                                    <div class="testimonial-founder d-flex align-items-center">
-                                        <div class="founder-text">
-                                            <span>Jessya Inn</span>
-                                            <p>Co Founder</p>
-                                        </div>
-                                    </div>
-                                </div>
+
+                            <div class="add-button">
+                                <a href="#" class="org-btn" id="addButton">ADD</a>
                             </div>
-                        </div>
+
+                            <div class="submit-button">
+                                <button type="submit" class="btn2">SUBMIT DETAILS</button>
+                            </div>
+                        </form>
+
+
+
+
+
                     </div>
                 </div>
             </div>
-        </div>
-        <!-- Testimonial End -->
+
+
+
+
+
+
+
+
+
+            <!-- We Offer AMC -->
+            <div class="row">
+                <div class="col-xl-12 row-innerr">
 
 
 
@@ -382,59 +335,95 @@
 
 
 
-        <!-- Team Start -->
-        <div class="team-area section-padding30">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xl-12">
-                        <!-- Section Tittle -->
-                        <div class="section-tittle section-tittle5 mb-50">
-                            <div class="front-text">
-                                <h2 class="">Exparts</h2>
-                            </div>
-                            <span class="back-text">our Team</span>
+                    <div class="we-offer">
+
+                        <div class="amc_title" style="margin-top: 40px;">
+                            <img src="assets/img/icon/contract.png" width="60" alt="">
+                            <h3 class="offer-text">We Offer Annual Maintenance Contract</h3>
                         </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <!-- single Tem -->
-                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-">
-                        <div class="single-team mb-30">
-                            <div class="team-img">
-                                <img src="assets/img/team/t1.png" alt="" />
+
+                        <div class="row-inner-main">
+
+
+                            <!-- Offers  -->
+                            <ul class="amc_ul">
+                                <li class="amc_li">
+                                    <p class="amc_p"><span
+                                            style="color: #ff5f13; font-weight: 600; font-size: 1.1rem;">✔&nbsp;</span>Window
+                                        Cleaning Charge <strong>₹899 /-</strong> Only</p>
+                                </li>
+
+                                <li class="amc_li">
+                                    <p class="amc_p"><span
+                                            style="color: #ff5f13; font-weight: 600; font-size: 1.1rem;">✔&nbsp;</span>Window
+                                        Cleaning Charge <strong>₹899 /-</strong> Only</p>
+                                </li>
+
+
+
+                                <li class="amc_li">
+                                    <p class="amc_p"><span
+                                            style="color: #ff5f13; font-weight: 600; font-size: 1.1rem;">✔&nbsp;</span>Window
+                                        Cleaning Charge <strong>₹899 /-</strong> Only</p>
+                                </li>
+
+
+
+                                <li class="amc_li">
+                                    <p class="amc_p"><span
+                                            style="color: #ff5f13; font-weight: 600; font-size: 1.1rem;">✔&nbsp;</span>Window
+                                        Cleaning Charge <strong>₹899 /-</strong> Only</p>
+                                </li>
+
+
+
+                                <li class="amc_li">
+                                    <p class="amc_p"><span
+                                            style="color: #ff5f13; font-weight: 600; font-size: 1.1rem;">✔&nbsp;</span>Window
+                                        Cleaning Charge <strong>₹899 /-</strong> Only</p>
+                                </li>
+                            </ul>
+
+
+                            <!-- amc_bg -->
+                            <div class="amc_bg">
+                                <img src="assets/img/gallery/amc.png" alt="">
                             </div>
-                            <div class="team-caption">
-                                <span>Profession</span>
-                                <h3>Saklin Mustak</h3>
-                            </div>
+
+
+
+
                         </div>
+
+
+
+
+                        <!-- <hr id="amc_hr"> -->
+
+
+
+
+
                     </div>
-                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-">
-                        <div class="single-team mb-30">
-                            <div class="team-img">
-                                <img src="assets/img/team/t1.png" alt="" />
-                            </div>
-                            <div class="team-caption">
-                                <span>Profession</span>
-                                <h3>Saklin Mustak</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-">
-                        <div class="single-team mb-30">
-                            <div class="team-img">
-                                <img src="assets/img/team/t1.png" alt="" />
-                            </div>
-                            <div class="team-caption">
-                                <span>Profession</span>
-                                <h3>Saklin Mustak</h3>
-                            </div>
-                        </div>
-                    </div>
+
+
+
+
+
                 </div>
             </div>
+
+
+
+
+
+
+
+
         </div>
-        <!-- Team End -->
+    </section>
+
+    <!-- AMC Section End -->
 
 
 
@@ -442,7 +431,10 @@
 
 
 
-    </main>
+
+
+
+
 
 
 
@@ -580,7 +572,8 @@
                             <label for="email" class="form-label">Email address</label>
                             <input type="email" name="email" class="form-control" id="email"
                                 aria-describedby="emailHelp">
-                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.
+                            </div>
                         </div>
                         <div class="mb-3">
                             <label for="subject" class="form-label">Subject</label>
@@ -647,6 +640,58 @@
 
 
 
+
+
+
+
+
+
+
+
+    <script>
+        let windowCount = 1; // Initialize window count
+    
+        document.getElementById('addButton').addEventListener('click', function (e) {
+            e.preventDefault(); // Prevent default link behavior
+            
+            // Increment the window count
+            windowCount++;
+    
+            // Clone the form-inner element
+            const formInner = document.querySelector('.form-inner');
+            const newFormInner = formInner.cloneNode(true);
+    
+            // Update the cloned inputs and labels to have unique names and IDs
+            const inputs = newFormInner.querySelectorAll('input, select');
+            inputs.forEach(input => {
+                // Update IDs and names for new fields
+                input.id = input.id.replace(/_\d+$/, `_${windowCount}`); // Change ID
+                input.value = ''; // Clear the value for new input
+                if (input.type === 'text' || input.type === 'number') {
+                    input.name += '[]'; // Make it an array
+                }
+                // Reset select to default
+                if (input.tagName === 'SELECT') {
+                    input.selectedIndex = 0; // Reset to default
+                    input.name += '[]'; // Make it an array
+                }
+            });
+    
+            // Update the window label
+            const windowLabel = newFormInner.querySelector(`.amc-label[id^='windowLabel_']`);
+            windowLabel.textContent = `Window ${windowCount}`; // Update the label text
+    
+            // Append the new set of inputs to the form
+            formInner.parentNode.insertBefore(newFormInner, document.querySelector('.add-button'));
+        });
+    
+        document.getElementById('amcForm').addEventListener('submit', function (e) {
+            // Validate all fields if necessary
+            // You can add any validation logic here
+    
+            // If everything is valid, the form will be submitted normally
+        });
+    </script>
 
 
 

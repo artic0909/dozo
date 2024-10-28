@@ -32,6 +32,11 @@
 .theme-color {
   color: #ff5f13;
 }
+.txt-org {
+  color: #ff5f13;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
 .boxed-btn {
   background: #fff;
   color: #ff5f13 !important;
@@ -4225,7 +4230,7 @@ hr {
   left: 10px;
   display: block;
   color: #fff;
-  background-color: #ff5f13;
+  background-color: #080808;
   padding: 8px 15px;
   border-radius: 5px;
 }
@@ -4239,7 +4244,7 @@ hr {
 .blog_item_img .blog_item_date h3 {
   font-size: 22px;
   font-weight: 600;
-  color: #fff;
+  color: #ff5f13;
   margin-bottom: 0;
   line-height: 1.2;
 }
@@ -4379,6 +4384,7 @@ hr {
 }
 .blog_right_sidebar .tag_cloud_widget ul li {
   display: inline-block;
+  cursor: pointer;
 }
 .blog_right_sidebar .tag_cloud_widget ul li a {
   display: inline-block;
@@ -4392,9 +4398,9 @@ hr {
   font-size: 13px;
 }
 .blog_right_sidebar .tag_cloud_widget ul li a:hover {
-  background: #ff5f13;
-  color: #fff !important;
-  -webkit-text-fill-color: #fff;
+  background: #0f0f0f;
+  color: #ff5f13 !important;
+  -webkit-text-fill-color: #ff5f13;
   text-decoration: none;
   -webkit-transition: 0.5s;
   transition: 0.5s;
