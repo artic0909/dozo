@@ -8,8 +8,13 @@
       width: 100px;
       display: flex;
       justify-self: center;
+      z-index: -1;
     }
   }
+}
+.err-img{
+    cursor: pointer !important;
+
 }
 
 /* btn2 */
@@ -68,11 +73,13 @@
 
 .breadcrumb-animation {
     position: absolute;
+    z-index: -1;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     overflow: hidden;
+    z-index: -1;
 }
 
 .breadcrumb-animation li {
@@ -84,6 +91,7 @@
     background: #ff5e13;
     animation: animate 25s linear infinite;
     bottom: -150px;
+    z-index: 1;
     
 }
 
