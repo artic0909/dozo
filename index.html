@@ -22,6 +22,14 @@
   <link rel="stylesheet" href="assets/css/nice-select.css" />
   <link rel="stylesheet" href="assets/css/style.css" />
   <style>
+    .inquiry-img {
+      transition: all 120ms ease-in;
+
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
+
     .h-btnn {
       display: none !important;
     }
@@ -381,13 +389,13 @@
                       Show all
                     </a>
                     <a class="nav-item nav-link" id="nav-upvc-tab" data-toggle="tab" href="#nav-upvc" role="tab"
-                      aria-controls="nav-upvc" aria-selected="false">UPVC</a>
+                      aria-controls="nav-upvc" aria-selected="false">ctg1</a>
                     <a class="nav-item nav-link" id="nav-aluminium-tab" data-toggle="tab" href="#nav-aluminium"
-                      role="tab" aria-controls="nav-aluminium" aria-selected="false">Aluminium</a>
+                      role="tab" aria-controls="nav-aluminium" aria-selected="false">ctg2</a>
                     <a class="nav-item nav-link" id="nav-sliding-tab" data-toggle="tab" href="#nav-sliding" role="tab"
-                      aria-controls="nav-aluminium" aria-selected="false">Sliding</a>
+                      aria-controls="nav-aluminium" aria-selected="false">ctg3</a>
                     <a class="nav-item nav-link" id="nav-toughlogy" data-toggle="tab" href="#nav-tough" role="tab"
-                      aria-controls="nav-aluminium" aria-selected="false">Tough</a>
+                      aria-controls="nav-aluminium" aria-selected="false">ctg4</a>
                   </div>
                 </nav>
                 <!--End Nav Button  -->
@@ -640,9 +648,23 @@
                   Quae aspernatur officia dolor voluptates! Lorem ipsum dolor
                   sit amet.
                 </p>
-                <a href="#" class="white-btn" data-bs-toggle="modal" data-bs-target="#myInquiryModal">get in touch</a> &nbsp;
-                <a href="#" class="white-btn" data-bs-toggle="modal" data-bs-target="#myBlogCreateModal">leave your own blog</a>
+                <a href="#" class="white-btn" data-bs-toggle="modal" data-bs-target="#myInquiryModal">get in touch</a>
+                &nbsp;
+                <a href="#" class="white-btn" data-bs-toggle="modal" data-bs-target="#myBlogCreateModal">leave your own
+                  blog</a>
               </div>
+
+
+
+              <!-- gifs -->
+              <div class="gif-area" style="display: flex; flex-wrap: wrap; gap: 1%;">
+                <img src="assets/img/icon/e9.gif" width="70" alt="">
+                <img src="assets/img/icon/e2.gif" width="70" alt="">
+                <img src="assets/img/icon/e8.gif" width="70" alt="">
+                <img src="assets/img/icon/e10.gif" width="70" alt="">
+                <img src="assets/img/icon/e3.gif" width="70" alt="">
+              </div>
+
             </div>
           </div>
         </div>
@@ -1098,14 +1120,24 @@
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
-          <h3 class="modal-title" id="myInquiryModalLabel" style="font-weight: 700;">You Need Help?</h3>
+          <div class="row">
+            <div class="col-xl-12">
+              <!-- Section Tittle -->
+              <div class="section-tittle section-tittle7">
+                <div class="front-text">
+                  <h2 class="">You Need Help ?</h2>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
         <div class="modal-body">
           <form>
             <div class="mb-3">
               <label for="email" class="form-label">Email address</label>
               <input type="email" name="email" class="form-control" id="email" aria-describedby="emailHelp">
-              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.
+              </div>
             </div>
             <div class="mb-3">
               <label for="subject" class="form-label">Subject</label>
@@ -1115,7 +1147,7 @@
               <label class="form-check-label" for="inquiry">Inqury</label>
               <textarea name="inquiry" id="inquiry" name="inquiry" class="form-control"></textarea>
             </div>
-            <button type="submit" class="btn w-100">Get Ticket</button>
+            <button type="submit" class="btn22 w-100">Get Ticket</button>
 
 
 
@@ -1129,15 +1161,15 @@
                 style="display:flex; justify-content: space-evenly; align-items: center; gap: 3px;">
 
                 <a href="" class="find-icons">
-                  <img src="assets/img/icon/location.png" width="60" alt="">
+                  <img class="inquiry-img" src="assets/img/icon/location-pin.gif" width="60" alt="">
                 </a>
 
                 <a href="" class="find-icons">
-                  <img src="assets/img/icon/whatsapp.png" width="60" alt="">
+                  <img class="inquiry-img" src="assets/img/icon/chat.gif" width="60" alt="">
                 </a>
 
                 <a href="" class="find-icons">
-                  <img src="assets/img/icon/call.png" width="60" alt="">
+                  <img class="inquiry-img" src="assets/img/icon/incoming-call.gif" width="60" alt="">
                 </a>
 
               </div>

@@ -24,6 +24,14 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
     <style>
+        .inquiry-img {
+            transition: all 120ms ease-in;
+
+            &:hover {
+                transform: scale(1.2);
+            }
+        }
+
         .h-btnn {
             display: none !important;
         }
@@ -462,7 +470,16 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h3 class="modal-title" id="myInquiryModalLabel" style="font-weight: 700;">You Need Help?</h3>
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <!-- Section Tittle -->
+                            <div class="section-tittle section-tittle7">
+                                <div class="front-text">
+                                    <h2 class="">You Need Help ?</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="modal-body">
                     <form>
@@ -470,7 +487,8 @@
                             <label for="email" class="form-label">Email address</label>
                             <input type="email" name="email" class="form-control" id="email"
                                 aria-describedby="emailHelp">
-                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.
+                            </div>
                         </div>
                         <div class="mb-3">
                             <label for="subject" class="form-label">Subject</label>
@@ -480,7 +498,7 @@
                             <label class="form-check-label" for="inquiry">Inqury</label>
                             <textarea name="inquiry" id="inquiry" name="inquiry" class="form-control"></textarea>
                         </div>
-                        <button type="submit" class="btn w-100">Get Ticket</button>
+                        <button type="submit" class="btn22 w-100">Get Ticket</button>
 
 
 
@@ -494,15 +512,15 @@
                                 style="display:flex; justify-content: space-evenly; align-items: center; gap: 3px;">
 
                                 <a href="" class="find-icons">
-                                    <img src="assets/img/icon/location.png" width="60" alt="">
+                                    <img class="inquiry-img" src="assets/img/icon/location-pin.gif" width="60" alt="">
                                 </a>
 
                                 <a href="" class="find-icons">
-                                    <img src="assets/img/icon/whatsapp.png" width="60" alt="">
+                                    <img class="inquiry-img" src="assets/img/icon/chat.gif" width="60" alt="">
                                 </a>
 
                                 <a href="" class="find-icons">
-                                    <img src="assets/img/icon/call.png" width="60" alt="">
+                                    <img class="inquiry-img" src="assets/img/icon/incoming-call.gif" width="60" alt="">
                                 </a>
 
                             </div>

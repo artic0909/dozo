@@ -25,6 +25,14 @@
     <link rel="stylesheet" href="assets/css/responsive.css">
     <link rel="stylesheet" href="assets/css/amc.css">
     <style>
+        .inquiry-img {
+            transition: all 120ms ease-in;
+
+            &:hover {
+                transform: scale(1.2);
+            }
+        }
+
         .h-btnn {
             display: none !important;
         }
@@ -292,8 +300,8 @@
                                 <div class="form-group">
                                     <label class="amc-label" for="w_unit_1">Unit<span
                                             class="text-danger">*</span></label>
-                                    <input type="number" class="form-control bdrn" id="w_unit_1" name="w_unit[]" placeholder="0"
-                                        required>
+                                    <input type="number" class="form-control bdrn" id="w_unit_1" name="w_unit[]"
+                                        placeholder="0" required>
                                 </div>
                             </div>
 
@@ -564,7 +572,16 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h3 class="modal-title" id="myInquiryModalLabel" style="font-weight: 700;">You Need Help?</h3>
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <!-- Section Tittle -->
+                            <div class="section-tittle section-tittle7">
+                                <div class="front-text">
+                                    <h2 class="">You Need Help ?</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="modal-body">
                     <form>
@@ -583,7 +600,7 @@
                             <label class="form-check-label" for="inquiry">Inqury</label>
                             <textarea name="inquiry" id="inquiry" name="inquiry" class="form-control"></textarea>
                         </div>
-                        <button type="submit" class="btn w-100">Get Ticket</button>
+                        <button type="submit" class="btn22 w-100">Get Ticket</button>
 
 
 
@@ -597,15 +614,15 @@
                                 style="display:flex; justify-content: space-evenly; align-items: center; gap: 3px;">
 
                                 <a href="" class="find-icons">
-                                    <img src="assets/img/icon/location.png" width="60" alt="">
+                                    <img class="inquiry-img" src="assets/img/icon/location-pin.gif" width="60" alt="">
                                 </a>
 
                                 <a href="" class="find-icons">
-                                    <img src="assets/img/icon/whatsapp.png" width="60" alt="">
+                                    <img class="inquiry-img" src="assets/img/icon/chat.gif" width="60" alt="">
                                 </a>
 
                                 <a href="" class="find-icons">
-                                    <img src="assets/img/icon/call.png" width="60" alt="">
+                                    <img class="inquiry-img" src="assets/img/icon/incoming-call.gif" width="60" alt="">
                                 </a>
 
                             </div>
@@ -650,17 +667,17 @@
 
     <script>
         let windowCount = 1; // Initialize window count
-    
+
         document.getElementById('addButton').addEventListener('click', function (e) {
             e.preventDefault(); // Prevent default link behavior
-            
+
             // Increment the window count
             windowCount++;
-    
+
             // Clone the form-inner element
             const formInner = document.querySelector('.form-inner');
             const newFormInner = formInner.cloneNode(true);
-    
+
             // Update the cloned inputs and labels to have unique names and IDs
             const inputs = newFormInner.querySelectorAll('input, select');
             inputs.forEach(input => {
@@ -676,19 +693,19 @@
                     input.name += '[]'; // Make it an array
                 }
             });
-    
+
             // Update the window label
             const windowLabel = newFormInner.querySelector(`.amc-label[id^='windowLabel_']`);
             windowLabel.textContent = `Window ${windowCount}`; // Update the label text
-    
+
             // Append the new set of inputs to the form
             formInner.parentNode.insertBefore(newFormInner, document.querySelector('.add-button'));
         });
-    
+
         document.getElementById('amcForm').addEventListener('submit', function (e) {
             // Validate all fields if necessary
             // You can add any validation logic here
-    
+
             // If everything is valid, the form will be submitted normally
         });
     </script>
