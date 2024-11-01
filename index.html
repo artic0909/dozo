@@ -9,6 +9,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="manifest" href="site.webmanifest" />
   <link rel="shortcut icon" type="image/x-icon" href="assets/img/logo/dlogo.ico" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+  integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <!-- CSS here -->
   <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
@@ -99,7 +102,7 @@
 
 
 
-  <header>
+  <header style="z-index: 11111;">
     <!-- Header Start -->
     <div class="header-area header-transparent">
       <div class="main-header">
@@ -173,27 +176,26 @@
 
                       <li><a href="service.html">Service</a></li>
                       <li><a href="blog.html">Blog</a></li>
-                      <li><a href="amc.html">AMC</a></li>
-                      <li><a href="#" class="h-btnn" data-bs-toggle="modal" data-bs-target="#myInquiryModal">Inquiry
-                          Now</a></li>
+                      <li><a href="#" data-bs-toggle="modal" data-bs-target="#myInquiryModal"><i
+                            class="fa-solid fa-headset"></i>&nbsp; Contact Us</a></li>
+                      <li><a href="amc.html" class="h-btnn">AMC Inquiry</a></li>
 
-                      <!-- <li><a href="#">Pages</a>
-                                                <ul class="submenu">
-                                                    <li><a href="elements.html">Element</a></li>
-                                                    <li><a href="product-details.html">Projects Details</a></li>
-                                                    <li><a href="service-details.html">Services Details</a></li>
-                                                </ul>
-                                            </li> -->
-                      <!-- <li><a href="contact.html">Inquiry Now</a></li> -->
+
+
+
                     </ul>
                   </nav>
                 </div>
               </div>
+
               <div class="col-xl-2 col-lg-2 col-md-3">
                 <div class="header-right-btn f-right d-none d-lg-block">
-                  <a href="#" class="btn" data-bs-toggle="modal" data-bs-target="#myInquiryModal">Inquiry Now</a>
+                  <a href="amc.html" class="btn">AMC Inquiry</a>
                 </div>
+
+
               </div>
+
               <!-- Mobile Menu -->
               <div class="col-12">
                 <div class="mobile_menu d-block d-lg-none"></div>
@@ -1150,7 +1152,7 @@
 
 
 
-  <!-- Inquiry Modal Start -->
+  <!-- Contact Us Modal Start -->
   <div class="modal fade" id="myInquiryModal" tabindex="-1" aria-labelledby="myInquiryModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
@@ -1225,7 +1227,7 @@
       </div>
     </div>
   </div>
-  <!-- Inquiry Modal End -->
+  <!-- Contact Us Modal End -->
 
 
 

@@ -9,6 +9,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="manifest" href="site.webmanifest">
     <link rel="shortcut icon" type="image/x-icon" href="assets/img/logo/dlogo.ico" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- CSS here -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
@@ -24,6 +27,7 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
     <link rel="stylesheet" href="assets/css/amc.css">
+    <link rel="stylesheet" href="assets/css/function.css">
     <style>
         .inquiry-img {
             animation: scale1 1s ease-in-out infinite;
@@ -74,6 +78,26 @@
                 display: block !important;
             }
         }
+
+
+
+        /* for button ============================================================================================*/
+        .bttt1,
+        .bttt2 {
+            width: 30% !important;
+        }
+
+        @media (max-width:660px) {
+            .button-main-container {
+                display: block !important;
+            }
+
+            .bttt1,
+            .bttt2 {
+                width: 100% !important;
+                margin-bottom: 15px !important;
+            }
+        }
     </style>
 </head>
 
@@ -106,7 +130,7 @@
 
 
 
-    <header>
+    <header style="z-index: 11111;">
         <!-- Header Start -->
         <div class="header-area header-transparent">
             <div class="main-header">
@@ -182,28 +206,26 @@
 
                                             <li><a href="service.html">Service</a></li>
                                             <li><a href="blog.html">Blog</a></li>
-                                            <li><a href="amc.html">AMC</a></li>
-                                            <li><a href="#" class="h-btnn" data-bs-toggle="modal"
-                                                    data-bs-target="#myInquiryModal">Inquiry Now</a></li>
+                                            <li><a href="#" data-bs-toggle="modal" data-bs-target="#myInquiryModal"><i
+                                                        class="fa-solid fa-headset"></i>&nbsp; Contact Us</a></li>
+                                            <li><a href="amc.html" class="h-btnn">AMC Inquiry</a></li>
 
-                                            <!-- <li><a href="#">Pages</a>
-                                                    <ul class="submenu">
-                                                        <li><a href="elements.html">Element</a></li>
-                                                        <li><a href="product-details.html">Projects Details</a></li>
-                                                        <li><a href="service-details.html">Services Details</a></li>
-                                                    </ul>
-                                                </li> -->
-                                            <!-- <li><a href="contact.html">Inquiry Now</a></li> -->
+
+
+
                                         </ul>
                                     </nav>
                                 </div>
                             </div>
+
                             <div class="col-xl-2 col-lg-2 col-md-3">
                                 <div class="header-right-btn f-right d-none d-lg-block">
-                                    <a href="#" class="btn" data-bs-toggle="modal"
-                                        data-bs-target="#myInquiryModal">Inquiry Now</a>
+                                    <a href="amc.html" class="btn">AMC Inquiry</a>
                                 </div>
+
+
                             </div>
+
                             <!-- Mobile Menu -->
                             <div class="col-12">
                                 <div class="mobile_menu d-block d-lg-none"></div>
@@ -293,58 +315,340 @@
 
 
 
-                        <form action="" id="amcForm">
-                            <div class="form-inner" id="windowGroup_1">
-                                <div class="form-group">
-                                    <p class="amc-label">Window</p>
-                                    <p class="amc-label amc-label1" id="windowLabel_1">Window 1</p>
-                                </div>
+                        <div class="content">
+                            <div class="content__inner">
+                                <div class="container overflow-hidden">
+                                    <div class="multisteps-form">
+                                        <div class="row">
+                                            <div class="col-12 col-lg-8 ml-auto mr-auto mb-4">
+                                                <div class="multisteps-form__progress">
+                                                    <button class="multisteps-form__progress-btn js-active"
+                                                        type="button" title="User Info">User Info</button>
+                                                    <button class="multisteps-form__progress-btn" type="button"
+                                                        title="Address">Address</button>
+                                                    <button class="multisteps-form__progress-btn" type="button"
+                                                        title="Order Info">AMC</button>
+                                                    <button class="multisteps-form__progress-btn" type="button"
+                                                        title="Message">Opinion</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-12 col-lg-8 m-auto">
+                                                <form class="multisteps-form__form">
 
-                                <div class="form-group">
-                                    <label class="amc-label" for="w_length_1">Length<span
-                                            class="text-danger">*</span></label>
-                                    <input type="text" class="form-control bdrn" id="w_length_1" name="w_length[]"
-                                        placeholder="Window Length" required>
-                                </div>
 
-                                <div class="form-group">
-                                    <label class="amc-label" for="w_breadth_1">Breadth<span
-                                            class="text-danger">*</span></label>
-                                    <input type="text" class="form-control bdrn" id="w_breadth_1" name="w_breadth[]"
-                                        placeholder="Window Breadth" required>
-                                </div>
 
-                                <div class="form-group">
-                                    <label class="amc-label" for="w_type_1">Window Type<span
-                                            class="text-danger">*</span></label>
-                                    <br>
-                                    <select name="w_type[]" id="w_type_1" class="form-control bdrn"
-                                        style="appearance: none; -webkit-appearance: none;" required>
-                                        <option value="" selected>Select Type</option>
-                                        <option value="Type 1">Type 1</option>
-                                        <option value="Type 2">Type 2</option>
-                                        <option value="Type 3">Type 3</option>
-                                        <option value="Type 4">Type 4</option>
-                                        <option value="Type 5">Type 5</option>
-                                    </select>
-                                </div>
 
-                                <div class="form-group">
-                                    <label class="amc-label" for="w_unit_1">Unit<span
-                                            class="text-danger">*</span></label>
-                                    <input type="number" class="form-control bdrn" id="w_unit_1" name="w_unit[]"
-                                        placeholder="0" required>
+                                                    <!-- 1st part User INFO -->
+                                                    <div class="multisteps-form__panel shadow p-4 rounded bg-white js-active"
+                                                        data-animation="fade">
+
+
+
+
+                                                        <div class="row">
+                                                            <div class="col-xl-12">
+                                                                <!-- Section Tittle -->
+                                                                <div class="section-tittle section-tittle7">
+                                                                    <div class="front-text">
+                                                                        <h2 class="" id="myInquiryMultiModalLabel">User
+                                                                            Info</h2>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+
+
+
+                                                        <div class="multisteps-form__content">
+
+
+
+
+                                                            <div class="mb-3">
+                                                                <label for="fname" class="form-label">Full Name</label>
+                                                                <input type="text" name="fname" class="form-control"
+                                                                    id="fname" required>
+                                                            </div>
+
+                                                            <div class="mb-3">
+                                                                <label for="email" class="form-label">Email
+                                                                    address</label>
+                                                                <input type="email" name="email" class="form-control"
+                                                                    id="email" aria-describedby="emailHelp" required>
+                                                                <div id="emailHelp" class="form-text">We'll never share
+                                                                    your email with
+                                                                    anyone else.
+                                                                </div>
+                                                            </div>
+
+
+                                                            <div class="mb-3">
+                                                                <label for="mob" class="form-label">Mobile No</label>
+                                                                <input type="text" name="mob" id="mob"
+                                                                    class="form-control" id="mob" required>
+                                                            </div>
+
+                                                            <div class="button-row d-flex mt-4">
+                                                                <button class="btn w-100 ml-auto js-btn-next"
+                                                                    type="button" title="Next">Next</button>
+                                                            </div>
+
+
+
+
+
+                                                        </div>
+                                                    </div>
+
+
+
+
+
+
+
+                                                    <!-- 2nd part Address Info -->
+                                                    <div class="multisteps-form__panel shadow p-4 rounded bg-white"
+                                                        data-animation="fade">
+
+
+
+
+
+                                                        <div class="row">
+                                                            <div class="col-xl-12">
+                                                                <!-- Section Tittle -->
+                                                                <div class="section-tittle section-tittle7">
+                                                                    <div class="front-text">
+                                                                        <h2 class="" id="myInquiryMultiModalLabel">Your
+                                                                            Address</h2>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+
+
+
+                                                        <div class="multisteps-form__content">
+
+                                                            <div class="mb-3">
+                                                                <label class="form-check-label"
+                                                                    for="add">Address</label>
+                                                                <textarea name="add" id="add" class="form-control"
+                                                                    required rows="7"></textarea>
+                                                            </div>
+
+                                                            <div class="button-row d-flex mt-4 button-main-container">
+                                                                <button class="btn22 bttt1 js-btn-prev" type="button"
+                                                                    title="Prev">Prev</button>
+                                                                <button class="btn bttt2 ml-auto js-btn-next"
+                                                                    type="button" title="Next">Next</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+
+
+
+
+
+
+
+
+
+                                                    <!-- 3rd part AMC Info -->
+                                                    <div class="multisteps-form__panel shadow p-4 rounded bg-white"
+                                                        data-animation="" style="z-index: 1;">
+
+
+
+
+                                                        <div class="row">
+                                                            <div class="col-xl-12">
+                                                                <!-- Section Tittle -->
+                                                                <div class="section-tittle section-tittle7">
+                                                                    <div class="front-text">
+                                                                        <h2 class="" id="myInquiryMultiModalLabel">AMC
+                                                                        </h2>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+
+
+
+                                                        <div class="multisteps-form__content">
+
+
+
+
+
+                                                            <div id="amcForm">
+                                                                <div class="form-inner" id="windowGroup_1">
+                                                                    <div class="form-group">
+                                                                        <p class="amc-label">Window</p>
+                                                                        <p class="amc-label amc-label1"
+                                                                            id="windowLabel_1">Window 1</p>
+                                                                    </div>
+
+                                                                    <div class="form-group">
+                                                                        <label class="amc-label"
+                                                                            for="w_length_1">Length<span
+                                                                                class="text-danger">*</span></label>
+                                                                        <input type="text" class="form-control bdrn"
+                                                                            id="w_length_1" name="w_length[]"
+                                                                            placeholder="Window Len..." required>
+                                                                    </div>
+
+                                                                    <div class="form-group">
+                                                                        <label class="amc-label"
+                                                                            for="w_breadth_1">Breadth<span
+                                                                                class="text-danger">*</span></label>
+                                                                        <input type="text" class="form-control bdrn"
+                                                                            id="w_breadth_1" name="w_breadth[]"
+                                                                            placeholder="Window Bread..." required>
+                                                                    </div>
+
+                                                                    <div class="form-group">
+                                                                        <label class="amc-label" for="w_type_1">Window
+                                                                            Type<span
+                                                                                class="text-danger">*</span></label>
+                                                                        <br>
+                                                                        <select name="w_type[]" id="w_type_1"
+                                                                            class="form-control bdrn"
+                                                                            style="appearance: none; -webkit-appearance: none;"
+                                                                            required>
+                                                                            <option value="" selected>Select Type
+                                                                            </option>
+                                                                            <option value="Type 1">Type 1</option>
+                                                                            <option value="Type 2">Type 2</option>
+                                                                            <option value="Type 3">Type 3</option>
+                                                                            <option value="Type 4">Type 4</option>
+                                                                            <option value="Type 5">Type 5</option>
+                                                                        </select>
+                                                                    </div>
+
+                                                                    <div class="form-group">
+                                                                        <label class="amc-label"
+                                                                            for="w_unit_1">Unit<span
+                                                                                class="text-danger">*</span></label>
+                                                                        <input type="number" class="form-control bdrn"
+                                                                            id="w_unit_1" name="w_unit[]"
+                                                                            placeholder="0" required>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="add-button">
+                                                                    <a href="#" class="org-btn" id="addButton">ADD</a>
+                                                                </div>
+
+                                                            </div>
+
+
+
+                                                            <div class="row">
+                                                                <div
+                                                                    class="button-row d-flex mt-4 col-12 button-main-container">
+                                                                    <button class="btn22 bttt1 js-btn-prev"
+                                                                        type="button" title="Prev">Prev</button>
+                                                                    <button class="btn bttt2 ml-auto js-btn-next"
+                                                                        type="button" title="Next">Next</button>
+                                                                </div>
+                                                            </div>
+
+
+
+
+
+                                                        </div>
+                                                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                    <!-- 4th Expert Opinion Info -->
+                                                    <div class="multisteps-form__panel shadow p-4 rounded bg-white"
+                                                        data-animation="scaleIn" style="z-index: 1;">
+
+
+
+
+                                                        <div class="row">
+                                                            <div class="col-xl-12">
+                                                                <!-- Section Tittle -->
+                                                                <div class="section-tittle section-tittle7">
+                                                                    <div class="front-text">
+                                                                        <h2 class="" id="myInquiryMultiModalLabel">
+                                                                            Expert Opinion</h2>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+
+
+
+
+                                                        <div class="multisteps-form__content">
+
+
+
+
+
+                                                            <div class="mb-3">
+                                                                <label class="form-check-label" for="d_op"
+                                                                    style="font-size: 1.2rem; font-weight: 600;">Details
+                                                                    of Window / Expert Opinion</label>
+                                                                <textarea name="d_op" id="d_op" class="form-control"
+                                                                    required rows="7"></textarea>
+                                                            </div>
+
+
+
+
+
+                                                            <div class="button-row d-flex mt-4 button-main-container">
+                                                                <button class="btn22 bttt1 js-btn-prev" type="button"
+                                                                    title="Prev">Prev</button>
+                                                                <button class="btn bttt2 ml-auto" type="submit"
+                                                                    title="Send">SUBMIT</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+
+
+
+
+
+
+
+
+
+
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-
-                            <div class="add-button">
-                                <a href="#" class="org-btn" id="addButton">ADD</a>
-                            </div>
-
-                            <div class="submit-button">
-                                <button type="submit" class="btn2">SUBMIT DETAILS</button>
-                            </div>
-                        </form>
+                        </div>
 
 
 
@@ -363,7 +667,7 @@
 
 
             <!-- We Offer AMC -->
-            <div class="row">
+            <div class="row" style="z-index: -1;">
                 <div class="col-xl-12 row-innerr">
 
 
@@ -599,7 +903,7 @@
 
 
 
-    <!-- Inquiry Modal Start -->
+    <!-- Contact Us Modal Start -->
     <div class="modal fade" id="myInquiryModal" tabindex="-1" aria-labelledby="myInquiryModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -676,7 +980,7 @@
             </div>
         </div>
     </div>
-    <!-- Inquiry Modal End -->
+    <!-- Contact Us Modal End -->
 
 
 
@@ -777,50 +1081,6 @@
 
 
 
-    <script>
-        let windowCount = 1; // Initialize window count
-
-        document.getElementById('addButton').addEventListener('click', function (e) {
-            e.preventDefault(); // Prevent default link behavior
-
-            // Increment the window count
-            windowCount++;
-
-            // Clone the form-inner element
-            const formInner = document.querySelector('.form-inner');
-            const newFormInner = formInner.cloneNode(true);
-
-            // Update the cloned inputs and labels to have unique names and IDs
-            const inputs = newFormInner.querySelectorAll('input, select');
-            inputs.forEach(input => {
-                // Update IDs and names for new fields
-                input.id = input.id.replace(/_\d+$/, `_${windowCount}`); // Change ID
-                input.value = ''; // Clear the value for new input
-                if (input.type === 'text' || input.type === 'number') {
-                    input.name += '[]'; // Make it an array
-                }
-                // Reset select to default
-                if (input.tagName === 'SELECT') {
-                    input.selectedIndex = 0; // Reset to default
-                    input.name += '[]'; // Make it an array
-                }
-            });
-
-            // Update the window label
-            const windowLabel = newFormInner.querySelector(`.amc-label[id^='windowLabel_']`);
-            windowLabel.textContent = `Window ${windowCount}`; // Update the label text
-
-            // Append the new set of inputs to the form
-            formInner.parentNode.insertBefore(newFormInner, document.querySelector('.add-button'));
-        });
-
-        document.getElementById('amcForm').addEventListener('submit', function (e) {
-            // Validate all fields if necessary
-            // You can add any validation logic here
-
-            // If everything is valid, the form will be submitted normally
-        });
-    </script>
 
 
 
@@ -881,6 +1141,99 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
         integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
         crossorigin="anonymous"></script>
+
+
+
+
+    <script src="assets/js/function.js"></script>
+    <script src="assets/js/amc.js"></script>
+
+
+
+
+
+
+
+
+
+    <!-- form validation -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const steps = document.querySelectorAll(".multisteps-form__panel");
+            const nextButtons = document.querySelectorAll(".js-btn-next");
+            const prevButtons = document.querySelectorAll(".js-btn-prev");
+
+            // Function to validate form fields
+            function validateForm(stepIndex) {
+                let isValid = true;
+                const fields = steps[stepIndex].querySelectorAll("input, textarea, select");
+
+                fields.forEach((field) => {
+                    const errorMsg = field.parentElement.querySelector(".error-message");
+
+                    // Remove existing error message
+                    if (errorMsg) {
+                        errorMsg.remove();
+                    }
+
+                    // Check if field is required and empty
+                    if (field.hasAttribute("required") && !field.value) {
+                        isValid = false;
+                        showError(field, "This field is required");
+                    }
+
+                    // Validate email format
+                    if (field.type === "email" && field.value) {
+                        const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+                        if (!emailPattern.test(field.value)) {
+                            isValid = false;
+                            showError(field, "Please enter a valid email address");
+                        }
+                    }
+
+                    // Validate phone number format
+                    if (field.id === "mob" && field.value) {
+                        const phonePattern = /^[0-9]{10}$/;
+                        if (!phonePattern.test(field.value)) {
+                            isValid = false;
+                            showError(field, "Please enter a valid 10-digit phone number");
+                        }
+                    }
+                });
+
+                return isValid;
+            }
+
+            // Function to show error messages
+            function showError(field, message) {
+                const errorMsg = document.createElement("div");
+                errorMsg.className = "error-message text-danger";
+                errorMsg.style.fontSize = "0.9rem";
+                errorMsg.style.marginTop = "0.25rem";
+                errorMsg.textContent = message;
+                field.parentElement.appendChild(errorMsg);
+            }
+
+            // Event listeners for Next buttons
+            nextButtons.forEach((button, index) => {
+                button.addEventListener("click", () => {
+                    if (validateForm(index)) {
+                        steps[index].classList.remove("js-active");
+                        steps[index + 1].classList.add("js-active");
+                    }
+                });
+            });
+
+            // Event listeners for Prev buttons
+            prevButtons.forEach((button, index) => {
+                button.addEventListener("click", () => {
+                    steps[index + 1].classList.remove("js-active");
+                    steps[index].classList.add("js-active");
+                });
+            });
+        });
+    </script>
+
 
 </body>
 

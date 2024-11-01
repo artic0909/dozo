@@ -2169,7 +2169,7 @@ hr {
 .main-header .main-menu ul li {
   display: inline-block;
   position: relative;
-  z-index: 1;
+  z-index: 1111111111 !important;
 }
 .main-header .main-menu ul li a {
   color: #ffffff;
