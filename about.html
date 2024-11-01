@@ -25,12 +25,44 @@
     <link rel="stylesheet" href="assets/css/responsive.css">
     <style>
         .inquiry-img {
-            transition: all 120ms ease-in;
+            animation: scale1 1s ease-in-out infinite;
+            transition: transform 120ms ease-in;
+        }
 
-            &:hover {
-                transform: scale(1.2);
+        /* Applying animation delays to each image */
+        .inquiry-img:nth-child(1) {
+            animation-delay: 0s;
+        }
+
+        .inquiry-img:nth-child(2) {
+            animation-delay: 0.3s;
+            /* Start after the first */
+        }
+
+        .inquiry-img:nth-child(3) {
+            animation-delay: 0.6s;
+            /* Start after the second */
+        }
+
+        .inquiry-img:hover {
+            transform: scale(1.2);
+            animation: none;
+        }
+
+        @keyframes scale1 {
+            0% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.1);
+            }
+
+            100% {
+                transform: scale(1);
             }
         }
+
 
         .h-btnn {
             display: none !important;
@@ -596,17 +628,18 @@
                         <div class="mb-3">
                             <label for="email" class="form-label">Email address</label>
                             <input type="email" name="email" class="form-control" id="email"
-                                aria-describedby="emailHelp">
+                                aria-describedby="emailHelp" required>
                             <div id="emailHelp" class="form-text">We'll never share your email with anyone else.
                             </div>
                         </div>
                         <div class="mb-3">
                             <label for="subject" class="form-label">Subject</label>
-                            <input type="text" class="form-control" name="subject" id="subject">
+                            <input type="text" class="form-control" name="subject" id="subject" required>
                         </div>
                         <div class="mb-3">
-                            <label class="form-check-label" for="inquiry">Inqury</label>
-                            <textarea name="inquiry" id="inquiry" name="inquiry" class="form-control"></textarea>
+                            <label class="form-check-label" for="inquiry">Inquiry</label>
+                            <textarea name="inquiry" id="inquiry" name="inquiry" class="form-control"
+                                required></textarea>
                         </div>
                         <button type="submit" class="btn22 w-100">Get Ticket</button>
 
@@ -660,7 +693,78 @@
 
 
 
+    <!-- Inquiry Send Success Modal Start -->
+    <div class="modal fade" id="myInquirySuccessModal" tabindex="-1" role="dialog"
+        aria-labelledby="myInquirySuccessModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-body" style="display: flex; flex-direction: column; align-items: center;">
 
+
+                    <img src="assets/img/icon/upp.gif" width="180" alt="">
+
+
+
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <!-- Section Tittle -->
+                            <div class="section-tittle section-tittle7">
+                                <div class="front-text">
+                                    <h2 class="" style="text-align: center;">Your Inquiry Is Submitted successfully !
+                                    </h2>
+                                    <p style="text-align: right; font-weight: 700;">Please Check The Mail →</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn w-100" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Inquiry Send Success Modal End -->
+
+
+
+
+
+
+    <!-- Inquiry Send Unsuccess Modal Start -->
+    <div class="modal fade" id="myInquiryErrorModal" tabindex="-1" role="dialog"
+        aria-labelledby="myInquiryErrorModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-body" style="display: flex; flex-direction: column; align-items: center;">
+
+
+                    <img src="assets/img/icon/unn.gif" width="180" alt="">
+
+
+
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <!-- Section Tittle -->
+                            <div class="section-tittle section-tittle7">
+                                <div class="front-text">
+                                    <h2 class="" style="text-align: center;">Your Inquiry Is Not Submitted !
+                                    </h2>
+                                    <p style="text-align: right; font-weight: 700;">Please Fill The Form Correctly →</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn w-100" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Inquiry Send Unsuccess Modal End -->
 
 
 

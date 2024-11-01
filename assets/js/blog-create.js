@@ -42,6 +42,7 @@ document
     const bQt = document.getElementById("b_qt").value.trim();
     const bDesc = document.getElementById("b_desc").value.trim();
     const bTag = document.getElementById("b_tag").value.trim();
+    const bDate = document.getElementById("b_date").value.trim();
 
     let isValid = true;
 
@@ -73,6 +74,12 @@ document
     // Check if post tags are provided
     if (!bTag) {
       document.getElementById("b_tag_error").style.display = "block";
+      isValid = false;
+    }
+
+    // Check if post date are provided
+    if (!bDate) {
+      document.getElementById("b_date_error").style.display = "block";
       isValid = false;
     }
 
